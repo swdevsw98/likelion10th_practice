@@ -8,39 +8,168 @@
 
 <body>
     <!--제목 태그 예시 3분-->
-
+    <h1>제목의 중요도 1</h1>
+    <h2>제목의 중요도 2</h2>
+    <h3>제목의 중요도 3</h3>
+    <h4>제목의 중요도 4</h4>
+    <h5>제목의 중요도 5</h5>
+    <h6>제목의 중요도 6</h6>
     
 
     <!--본문 태그 예시 3분-->
+    <p>현재 p태그를 사용해보고 있는 중</p>
+    <p>p태그는 단락을 만드는 태그이기에
+        Enter를 사용하여 줄을 바꿔보아도
+        하나의 단락으로 보여진다!
+    </p>
 
-   
+    <p>하지만 p태그를 활용하여 작성하고 있는 중간에
+        <br>태그를 넣어준다면 줄 바꿈이 가능하다!
+    </p>
+
+    <pre>pre태그는 입력한 그대로를 보여주기 때문에
+        직접 작성을 하다가 줄 바꿈을 할 경우
+        그대로 반영을 하여 보여준다.
+    </pre>
+    <hr>
 
     <!--본문 태그 예시2 3분-->
-
-    
+    <strong>텍스트를 굵게 표현</strong>
+    <br>
+    <br>
+    <em>텍스트를 기울여서 표현</em>
+    <br>
+    <br>
+    텍스트를<sub>내려서 표현</sub>
+    <br>
+    <br>
+    텍스트를<sup>올려서 표현</sup>
+    <br>
+    <br>
+    <ins>텍스트에 밑줄을 삽입</ins>
+    <br>
+    <br>
+    <del>텍스트에 취소선을 삽입</del>
+    <hr>
 
     <!--링크 태그 예시 3분-->
-
-   
+    <a href="#section1">이동하려면 클릭하세요.</a>
+   <br>
+   <a>Naver</a>
+   <br>
+   <a href="https://www.naver.com" title="네이버로 이동하는 링크">Naver</a>
+    <br>
+    <br>
+    <a href="https://www.naver.com" target="_blank">Naver 새 탭</a>
+    <br>
+    <a href="https://www.naver.com" target="_self">Naver 현재 탭</a>
+    <h1>공백1</h1>
+    <h2>공백2</h2>
+    <p id="section1">이동완료</p>
+    <hr>
 
     <!--이미지 태그 예시 3분-->
-
-   
+    <img src="https://cdn.discordapp.com/attachments/955387965247467520/960839271290388490/KakaoTalk_20220307_143904001.jpg" alt="숭실 멋쟁이 사자처럼 로고" width="10%" height="10%">
+    <br>
+    <img src="" alt="img src가 잘못되면 alt문구가 나와요!">
+    <hr>
 
     <!--테이블 태그 예시 3분-->
-
-    
+    <table>
+        <tr>
+            <th>학과</th>
+            <th>이름</th>
+            <th>파트</th>
+        </tr>
+        <tr>
+            <td>소프트웨어학부</td>
+            <td>김멋쟁</td>
+            <td>디자인</td>
+        </tr>
+        <tr>
+            <td>컴퓨터학부</td>
+            <td>최사자</td>
+            <td>프론트</td>
+        </tr>
+    </table>
+    <hr>
 
     <!--리스트 태그 예시 5분-->
-
-    
+    <h2>하체 루틴</h2>
+    <ol>
+        <li>스쿼트 80 * 8 * 5</li>
+        <li>레그 익스텐션 60 * 12 * 3</li>
+        <li>레그 컬 30 * 12 * 3</li>
+        <li>유산소 사치</li>
+    </ol>
+    <h2>식당</h2>
+    <ul>
+        <li>탄수화물 150g * 4</li>
+        <li>닭가슴살 400g</li>
+        <li>단백질 쉐이크 3스푼</li>
+    </ul>
+    <h2>스트레칭</h2>
+    <ol type="a" start="3" reversed>
+        <li>가슴 스트레칭</li>
+        <li>허리 스트레칭</li>
+        <li>어깨 스트레칭</li>
+    </ol>
+    <hr>
 
     <!--method 속성 예시 5분-->
+    <h2>method-GET 예시</h2>
+    <form action="전송할 대상" method="GET">
+        <label>ID</label>
+        <input type="text" name="id">
+    </form>
 
-    
+    <h2>method-POST 예시</h2>
+    <form action="전송할 대상" method="POST">
+        <label>ID</label>
+        <input type="text" name="id">
+    </form>
+    <hr>
 
     <!--Form 태그 예시 Input-5분 select-4분 나머지-6분-->
-    
-    
+    <h2>Form 태그 예시</h2>
+    <form action="URL" method="POST">
+        <label for="id">ID : </label>
+        <input type="text" name="id" placeholder="아이디를 입력하세요.">
+        <br>
+        <label for="pw">PW : </label>
+        <input types="password" name="pw" placeholder="패스워드를 입력하세요.">
+        <br>
+        <label for="email adrs">email : </label>
+        <input types="text" name="email adrs" placeholder="이메일을 입력하세요.">
+            <select name="email" id="adrs">
+                <optgroup label="이메일 선택">
+                    <option value="naver">@naver.com</option>
+                    <option value="google">@google.com</option>
+                    <option value="daum">@daum.net </option>
+                </optgroup>
+            </select>
+            <br>
+            <div>
+                <h3>다룰 수 있는 언어는 무엇이 있나요?</h3>
+                <input type="checkbox"><label>Java</label>
+                <input type="checkbox"><label>Python</label>
+                <input type="checkbox"><label>C</label>
+                <input type="checkbox"><label>html&css</label>
+                <label for="js"><input type="checkbox" id="js">Js
+            </div>
+            <div>
+                <h3>몇 학년에 재학 중인가요?</h3>
+                <input type="radio" name="grade"><label>1학년</label>
+                <input type="radio" name="grade"><label>2학년</label>
+                <input type="radio" name="grade"><label>3학년</label>
+                <input type="radio" name="grade"><label>4학년</label>
+            </div>
+            <div>
+                <textarea name="note" id="notebook" cols="30" rows="20"
+                placeholder="글을 작성하세요."></textarea>
+                <button type="submit"> 제출하기</button>
+            </div>
+    </form>
+
 </body>
 </html>
